@@ -1,10 +1,12 @@
 # ML_Group_09
 
 **MACHINE LEARNING (TITLE)**
+
 ***Predicting the Popularity Score of Music Tracks***
-Alexandra Hassan - 764061 - alexandra.hassan@studenti.luiss.it
-Carlo Martino - 764541 - carlo.martino@studenti.luiss.it
-Simone De Benedictis - 764941 - simone.debenedictis@studenti.luiss.it
+
+* Alexandra Hassan - 764061 - alexandra.hassan@studenti.luiss.it
+* Carlo Martino - 764541 - carlo.martino@studenti.luiss.it
+* Simone De Benedictis - 764941 - simone.debenedictis@studenti.luiss.it
 
 **1) Introduction**
 

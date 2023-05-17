@@ -86,11 +86,13 @@ After calculating those, the Random Forest classifier ended up being the more ac
 
 **4) Results**
 
-In order to see the results and be able to interpret them and derive our conclusions, we created a final data frame of the songs contained in the Test set, attaching to the audio features the predicted Popularity Score based on the Regression model.
-We decided to consider the top 20 songs based on the Regression predictions and analyze the audio features of those to see whether or not there were similarities that could show us an ideal profile of a future hit song.
+In order to see the results and be able to interpret them and derive our conclusions, we created a final data frame of the songs contained in the Test set, attaching to the audio features the predicted Popularity Score based on the Regression model: based on this, we considered the top 20 songs based on the Regression predictions and analyzed the audio features of those, to see whether or not there were similarities that could show us an ideal profile of a future hit song.
 Based on our results, we noticed that popular songs tend to have considerable danceability and energy and be of the K-Pop genre.
+The latter is a genre that, for a few years, has been increasingly dominating the charts in western music markets, especially due to dedicated fanbases that support the songs and organize "streaming parties" for them.
 On the other hand, the valence and tempo seem to be quite diverse, while the speechiness and instrumentaless are low.
 This may indicate that, no matter the tone of the song, whether positive or negative, audiences gravitate towards songs that evoke energy and make them want to dance. Artists should also avoid including too much speech-like content in their songs, and it's better for them to sing on their songs as opposed to only delivering instrumental.
+
+![Top 20](images/Top 20.jpg)
 
 
 **5) Conclusions**

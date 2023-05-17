@@ -77,12 +77,8 @@ Since the latter showed the most promise, we decided to launch a grid search usi
 
 As the results of the R-squared did not feel completely satisfactory, we realized that we had an opportunity: turning the the problem at hand into an issue of Classification by trying to find a class of popularity, as opposed to a specific score, potentially increasing the quality of the final result and increasing the interpretability of the results.
 We decided to apply both a Random Forest classifier and XGBoost classifier, divide the popularity in 4 possible classes (1-25, 26-50, 51-75 and 76-100), and once again divide the Train and Test sets before scaling.
-In order to evaluate the two models, we used three metrics:
-* Accuracy, which measures the overall correctness of a model by calculating the percentage of True labels (Negative and Positives) over the total amount of observations
-* Precision, which focuses on the model's ability to identify True Positives and minimize False Positives errors.
-* The F1 Score, which combines Precision and Recall, another metric that helps minimize False Negatives, to give an overall balanced evaluation.
-
-After calculating those, the Random Forest classifier ended up being the more accurate one, therefore we decided to proceed with it and launch another grid search for it.
+In order to evaluate the two models, we analyzed the Accuracy, which measures the overall correctness of a model by calculating the percentage of True labels (Negative and Positives) over the total amount of observations
+After calculating it, the Random Forest classifier ended up being the more accurate one, therefore we decided to proceed with it and launch another grid search for it.
 
 **4) Results**
 

@@ -44,8 +44,14 @@ With this new encoded data frame, we once again dropped all null values: the res
 
 Continuing our EDA, we selected the features for which we wanted to examine the distribution: in this group, we excluded “Track Genre” and “Key” but included Explicit.
 We created Histograms and Box Plots, which showed us that the variables had different distributions and did not necessarily follow similar paths: danceability, for example, had a more or less normal distribution while, for energy, the number of songs increased as energy itself increased.
+
+![Dance](images/Dance.jpg)
+![Energy](images/Energy.jpg)
+
 The last step of our EDA was investigating the relationship among the different features using a Correlation Matrix.
 Through this, we were able to see a few interesting connections, like the negative correlation between energy and acousticness, or the positive correlation between the former and loudness; nevertheless, when looking at the popularity, which was our target, it was clear that none of the audio features had a big impact on it on their own, with the highest correlation being with danceability (0.08).
+
+![Correlation](images/Correlation.jpg)
 
 As we finished our EDA, the following step was Clustering.
 We did Clustering with a very specific aim in mind: checking if it was possible to cluster songs based on their audio features and having those clusters match with the track genre of those songs.

@@ -23,6 +23,7 @@ In the data set, to look at the characteristics that may make a song stick in yo
 * Variables related to the content of the Track, like Speechiness, Liveness, Valence and whether it contains Explicit lyrics
 * The Popularity of the track, our target, variable, with a value from 0 to 100
 
+Here you can see a flowchart that graphically shows the steps we took to tackle the task:
 ![Flowchart](images/Flowchart.jpg)
 
 **2) EDA & Clustering**
@@ -97,3 +98,5 @@ Songs can become popular for multiple reasons that are not taken into considerat
 This is why the evaluation of the models used is not as high as we may have hoped, because songs can have the same popularity and have completely different audio features.
 Does this mean that this analysis has no value? Absolutely not! It can be important for music labels to be aware of current trends and to have their artists release a single with a sound that feels fresh and current, if they’re looking for a song that audiences will likely enjoy and stream.
 Ultimately, however, we think an artist will maintain success and stability if they’re true to themselves and appear as genuine to the audiences, and if the audience is able to capture their personality and essence through the song they’re listening to: because of this, music labels should not put too much pressure or give too many directions to artists that may limit their artistic creativity.
+
+NOTE: The code for the different steps project was adapted from ChatGPT and modified based on our knowledge of material learned through the Machine Learning course and other courses of the Data Science & Management study plan.

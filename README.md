@@ -89,7 +89,9 @@ After calculating those, the Random Forest classifier ended up being the more ac
 In order to see the results and be able to interpret them and derive our conclusions, we created a final data frame of the songs contained in the Test set, attaching to the audio features the predicted Popularity Score based on the Regression model.
 We decided to consider the top 20 songs based on the Regression predictions and analyze the audio features of those to see whether or not there were similarities that could show us an ideal profile of a future hit song.
 Based on our results, we noticed that popular songs tend to have considerable danceability and energy and be of the K-Pop genre.
-On the other hand, the valence seems to be quite diverse, as well as the ...
+On the other hand, the valence and tempo seem to be quite diverse, while the speechiness and instrumentaless are low.
+This may indicate that, no matter the tone of the song, whether positive or negative, audiences gravitate towards songs that evoke energy and make them want to dance. Artists should also avoid including too much speech-like content in their songs, and it's better for them to sing on their songs as opposed to only delivering instrumental.
+
 
 **5) Conclusions**
 
@@ -100,4 +102,4 @@ This is why the evaluation of the models used is not as high as we may have hope
 Does this mean that this analysis has no value? Absolutely not! It can be important for music labels to be aware of current trends and to have their artists release a single with a sound that feels fresh and current, if they’re looking for a song that audiences will likely enjoy and stream.
 Ultimately, however, we think an artist will maintain success and stability if they’re true to themselves and appear as genuine to the audiences, and if the audience is able to capture their personality and essence through the song they’re listening to: because of this, music labels should not put too much pressure or give too many directions to artists that may limit their artistic creativity.
 
-NOTE: The code for the different steps project was adapted from ChatGPT and modified based on our knowledge of material learned through the Machine Learning course and other courses of the Data Science & Management study plan.
+*NOTE: The code for the different steps project was adapted from ChatGPT and modified based on our knowledge of material learned through the Machine Learning course and other courses of the Data Science & Management study plan.*

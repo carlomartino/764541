@@ -24,7 +24,7 @@ In the data set, to look at the characteristics that may make a song stick in yo
 * The Popularity of the track, our target, variable, with a value from 0 to 100
 
 Here you can see a flowchart that graphically shows the steps we took to tackle the task:
-![Flowchart](images/Flowchart.jpg)
+![Flowchart](images/Flow.jpg)
 
 **2) EDA & Clustering**
 

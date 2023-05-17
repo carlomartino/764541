@@ -81,6 +81,7 @@ In order to evaluate the two models, we used three metrics:
 * Accuracy, which measures the overall correctness of a model by calculating the percentage of True labels (Negative and Positives) over the total amount of observations
 * Precision, which focuses on the model's ability to identify True Positives and minimize False Positives errors.
 * The F1 Score, which combines Precision and Recall, another metric that helps minimize False Negatives, to give an overall balanced evaluation.
+
 After calculating those, the Random Forest classifier ended up being the more accurate one, therefore we decided to proceed with it and launch another grid search for it.
 
 **4) Results**

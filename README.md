@@ -92,7 +92,7 @@ The latter is a genre that, for a few years, has been increasingly dominating th
 On the other hand, the valence and tempo seem to be quite diverse, while the speechiness and instrumentaless are low.
 This may indicate that, no matter the tone of the song, whether positive or negative, audiences gravitate towards songs that evoke energy and make them want to dance. Artists should also avoid including too much speech-like content in their songs, and it's better for them to sing on their songs as opposed to only delivering instrumental.
 
-![Top 20](images/Top 20.png)
+![Top 20](images/Twenty.png)
 
 **5) Conclusions**
 

@@ -10,7 +10,7 @@
 
 **1) Introduction**
 
-Every now and then a new, different song becomes a hit: we hear it everyday on each radio station, we may hum the words even if we’ve never heard it in full. Sometimes the song is a ballad, sometimes it is a powerhouse disco hit.
+Every now and then, a new, different song becomes a hit: we hear it everyday on every radio station, we may hum the words even if we’ve never heard it in full. Sometimes the song is a ballad, sometimes it is a powerhouse disco hit.
 That poses a question: which are the features that make a song so popular? Is it possible to predict how popular a song will be based on qualities like its energy, acoustic-ness or danceability?
 This is what we will analyze and focus on in our project, thanks to data provided by the Music Intelligence Department (MID), which analyzes a library of songs that we can gain insight on to potentially give recommendations for future releases.
 

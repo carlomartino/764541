@@ -7,6 +7,7 @@ Carlo Martino - 764541 - carlo.martino@studenti.luiss.it
 Simone De Benedictis - 764941 - simone.debenedictis@studenti.luiss.it
 
 **1) Introduction**
+
 Every now and then a new, different song becomes a hit: we hear it everyday on each radio station, we may hum the words even if we’ve never heard it in full. Sometimes the song is a ballad, sometimes it is a powerhouse disco hit.
 That poses a question: which are the features that make a song so popular? Is it possible to predict how popular a song will be based on qualities like its energy, acoustic-ness or danceability?
 This is what we will analyze and focus on in our project, thanks to data provided by the Music Intelligence Department (MID), which analyzes a library of songs that we can gain insight on to potentially give recommendations for future releases.
@@ -21,6 +22,7 @@ In the data set, to look at the characteristics that may make a song stick in yo
 * The Popularity of the track, our target, variable, with a value from 0 to 100
 
 **2) EDA & Clustering**
+
 As we looked at the data set, we noticed a few things that we thought should be fixed.
 Therefore, when we started our Exploratory Data Analysis, or EDA, we made some choices regarding the data cleaning, in order to have a cleaned data frame that would be good for the future models.
 First, we noticed that certain songs appeared in the data more than once, either with the same track ID but different track genres, or with a different track ID altogether. To solve this, we decided to create a new variable that merged the Artist name and the Track name into one, which we named Artist Song: based on this new variable, we dropped all duplicates, then moved the row to the left of the dataframe, as it represented our new beginning.
@@ -47,6 +49,7 @@ Utilizing K-Means, we created over 100 clusters, and then compared the labels of
 In order to objectively see whether this was a good way technique, we calculated the Silhouette Score and the Homogeneity Score: the value of both metrics ranges from 0 to 1, and they measure the quality of the clusters by taking into consideration, respectively, the cohesion and separation between clusters and the degree to which clusters contain only samples of a single label; in our case, the values were 0.10 and 0.26 respectively, which were both low and showed us that this was not a good way to tackle the issue and proceed.
 
 **3) Regression & Classification**
+
 Since the ultimate goal of the analysis was to predict the Popularity score, which is a continuous variable with values ranging from 0 to 100, we decided to tackle this as a Regression problem. As we will see later, however, we also applied a classification model.
 
 Starting with Regression, we split the data into Train and Test data, defining the popularity as the Y and utilizing the data frame with the encoded variables as our X, after removing a few additional columns from it.
@@ -69,11 +72,13 @@ Precision, which focuses on the model's ability to identify True Positives and m
 The F1 Score, which combines Precision and Recall, another metric that helps minimize False Negatives, to give an overall balanced evaluation.
 
 **4) Results**
+
 In order to see the results and be able to interpret them and derive our conclusions, we created a final data frame of the songs contained in the Test set, attaching to the audio features the predicted Popularity Score based on the Regression model and the predicted Popularity Class based on the Classification.
 We decided to consider the top 20 songs based on the Regression predictions and analyze the audio features of those to see whether or not there were similarities that could show us an ideal profile of a future hit song.
 Based on our results, we noticed that popular songs tend to have considerable danceability and energy, be of the XX genre, and…
 
 **5) Conclusions**
+
 This analysis was an interesting way to see whether it is possible to measure the success of the song on objective, mathematical features provided by the MID. 
 Through our results, it is possible to conclude that while it is, in part, possible to do so, there are some limitations because the subject at hand, in our opinion, includes elements that are beyond the scope of measurability.
 Songs can become popular for multiple reasons that are not taken into consideration in the data set: social media, world events, live performances, a great music video or simply the fact that the artist that sings it has a very dedicated fan base that would make the song become a hit no matter its sound.

@@ -23,7 +23,7 @@ In the data set, to look at the characteristics that may make a song stick in yo
 * Variables related to the content of the Track, like Speechiness, Liveness, Valence and whether it contains Explicit lyrics
 * The Popularity of the track, our target, variable, with a value from 0 to 100
 
-[Flowchart.jpg](images/Flowchart.jpg)
+![Flowchart](images/Flowchart.jpg)
 
 **2) EDA & Clustering**
 

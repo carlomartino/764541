@@ -94,7 +94,6 @@ This may indicate that, no matter the tone of the song, whether positive or nega
 
 ![Top 20](images/Top 20.png)
 
-
 **5) Conclusions**
 
 This analysis was an interesting way to see whether it is possible to measure the success of the song on objective, mathematical features provided by the MID. 

@@ -58,9 +58,9 @@ Starting with Regression, we split the data into Train and Test data, defining t
 We defined that 25% of the data should be used as the Test set, while the remaining 75% for the Training set; finally, we scaled the data using Standard Scaler / MinMax Scaler, and proceeded.
 
 We tried multiple models, including Support Vector Regression, Gradient Boosting and Decision Tree. Our top 3 models, however, ended up being:
-Linear Regression: the most simple and widely used algorithm, it tries to find the best-fit line that minimizes the sum of the squared differences between the predicted and actual values. While this model may not capture complex non-linear relationships, we decided to still use it as a baseline and include it.
-Random Forest: an ensemble learning algorithm that combines multiple decision trees to make predictions, where the final prediction is made by aggregating the predictions of all the trees.
-eXtreme Gradient Boosting (or XGBoost): a gradient boosting algorithm, it creates an ensemble of weak prediction models and sequentially improves them by minimizing a loss function.
+* Linear Regression: the most simple and widely used algorithm, it tries to find the best-fit line that minimizes the sum of the squared differences between the predicted and actual values. While this model may not capture complex non-linear relationships, we decided to still use it as a baseline and include it.
+* Random Forest: an ensemble learning algorithm that combines multiple decision trees to make predictions, where the final prediction is made by aggregating the predictions of all the trees.
+* eXtreme Gradient Boosting (or XGBoost): a gradient boosting algorithm, it creates an ensemble of weak prediction models and sequentially improves them by minimizing a loss function.
 For each of this, we calculated the R-squared, which is a statistical measure that determines the goodness of fit.
 This was done to evaluate the quality of each model and determine how much each model could capture the variation in the target variable, which is the popularity score.
 The value of the R-squared ranges from 0 to 1, and the ideal situation is when the score is maximized and close to 1, which indicates a perfect fit: in our case, the values of the R-squared were 0.44 for the Linear Regression, 0.50 for the Random Forest and 0.51 for XGBoost.
@@ -69,9 +69,9 @@ Since the latter showed the most promise, we decided to launch a grid search usi
 As the results of the R-squared did not feel completely satisfactory, we realized that we had an opportunity: turning the the problem at hand into an issue of Classification by trying to find a class of popularity, as opposed to a specific score, potentially increasing the quality of the final result and increasing the interpretability of the results.
 We decided to apply both a Random Forest classifier and XGBoost classifier, divide the popularity in 4 possible classes (1-25, 26-50, 51-75 and 76-100), and once again divide the Train and Test sets before scaling.
 In order to evaluate the two models, we used three metrics:
-Accuracy, which measures the overall correctness of a model by calculating the percentage of True labels (Negative and Positives) over the total amount of observations
-Precision, which focuses on the model's ability to identify True Positives and minimize False Positives errors.
-The F1 Score, which combines Precision and Recall, another metric that helps minimize False Negatives, to give an overall balanced evaluation.
+* Accuracy, which measures the overall correctness of a model by calculating the percentage of True labels (Negative and Positives) over the total amount of observations
+* Precision, which focuses on the model's ability to identify True Positives and minimize False Positives errors.
+* The F1 Score, which combines Precision and Recall, another metric that helps minimize False Negatives, to give an overall balanced evaluation.
 
 **4) Results**
 

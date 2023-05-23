@@ -64,7 +64,7 @@ In order to objectively see whether this was a good way technique, we calculated
 Since the ultimate goal of the analysis was to predict the Popularity score, which is a continuous variable with values ranging from 0 to 100, we decided to tackle this as a Regression problem. As we will see later, however, we also applied a classification model.
 
 Starting with Regression, we split the data into Train and Test data, defining the popularity as the Y and utilizing the data frame with the encoded variables as our X, after removing a few additional columns from it.
-We defined that 25% of the data should be used as the Test set, while the remaining 75% for the Training set; finally, we scaled the data using Standard Scaler / MinMax Scaler, and proceeded.
+We defined that 25% of the data should be used as the Test set, while the remaining 75% for the Training set; finally, we scaled the data using MinMax Scaler, and proceeded.
 
 We tried multiple models, including Support Vector Regression, Gradient Boosting and Decision Tree. Our top 3 models, however, ended up being:
 * Linear Regression: the most simple and widely used algorithm, it tries to find the best-fit line that minimizes the sum of the squared differences between the predicted and actual values. While this model may not capture complex non-linear relationships, we decided to still use it as a baseline and include it.

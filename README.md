@@ -21,7 +21,7 @@ In the data set, to look at the characteristics that may make a song stick in yo
 * Variables related to the structure of the Track, like Duration, Key, Mode, Time Signature and Loudness
 * Variables related to the production of the Track, like Danceability, Energy, Acoustic-ness, Instrumental-ness and Tempo
 * Variables related to the content of the Track, like Speechiness, Liveness, Valence and whether it contains Explicit lyrics
-* The Popularity of the track, our target, variable, with a value from 0 to 100
+* The Popularity of the track, our target variable, with a value from 0 to 100
 
 Here you can see a flowchart that graphically shows the steps we took to tackle the task:
 ![Flowchart](images/Flow.jpg)
@@ -38,9 +38,9 @@ Since we felt that the Artist may be a good variable to consider, we wanted to s
 Similarly as the Artists, we also decided to drop the Album name, the Track name and the Track ID, as well as all the null values in the data.
 
 Looking at the different variables, we realized that there were three specific ones that needed Encoding:
-the Explicit variable had a value of either True or False, so we decided to Label encode it, giving it a value of either 0 or 1
-the Track Genre variable had over 100 possible values, so we decided to One Hot encode it since, even if it may make the model more computationally expensive, we thought it was important to consider the genre when predicting the popularity
-the Key variable had a value in the range from 0 to 11, as it indicates one of the 12 major scales/keys that a song can be in: we decided to One Hot encode this one as well.
+* the Explicit variable had a value of either True or False, so we decided to Label encode it, giving it a value of either 0 or 1
+* the Track Genre variable had over 100 possible values, so we decided to One Hot encode it since, even if it may make the model more computationally expensive, we thought it was important to consider the genre when predicting the popularity
+* the Key variable had a value in the range from 0 to 11, as it indicates one of the 12 major scales/keys that a song can be in: we decided to One Hot encode this one as well.
 With this new encoded data frame, we once again dropped all null values: the result was a data set of 53.451 rows and 142 columns, which we used to tackle the issue of finding the popularity score.
 
 Continuing our EDA, we selected the features for which we wanted to examine the distribution: in this group, we excluded “Track Genre” and “Key” but included Explicit.

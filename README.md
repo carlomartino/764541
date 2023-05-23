@@ -41,6 +41,7 @@ Looking at the different variables, we realized that there were three specific o
 * the Explicit variable had a value of either True or False, so we decided to Label encode it, giving it a value of either 0 or 1
 * the Track Genre variable had over 100 possible values, so we decided to One Hot encode it since, even if it may make the model more computationally expensive, we thought it was important to consider the genre when predicting the popularity
 * the Key variable had a value in the range from 0 to 11, as it indicates one of the 12 major scales/keys that a song can be in: we decided to One Hot encode this one as well.
+
 With this new encoded data frame, we once again dropped all null values: the result was a data set of 53.451 rows and 142 columns, which we used to tackle the issue of finding the popularity score.
 
 Continuing our EDA, we selected the features for which we wanted to examine the distribution: in this group, we excluded “Track Genre” and “Key” but included Explicit.
@@ -70,6 +71,7 @@ We tried multiple models, including Support Vector Regression, Gradient Boosting
 * Linear Regression: the most simple and widely used algorithm, it tries to find the best-fit line that minimizes the sum of the squared differences between the predicted and actual values. While this model may not capture complex non-linear relationships, we decided to still use it as a baseline and include it.
 * Random Forest: an ensemble learning algorithm that combines multiple decision trees to make predictions, where the final prediction is made by aggregating the predictions of all the trees.
 * eXtreme Gradient Boosting (or XGBoost): a gradient boosting algorithm, it creates an ensemble of weak prediction models and sequentially improves them by minimizing a loss function.
+
 For each of this, we calculated the R-squared, which is a statistical measure that determines the goodness of fit.
 This was done to evaluate the quality of each model and determine how much each model could capture the variation in the target variable, which is the popularity score.
 The value of the R-squared ranges from 0 to 1, and the ideal situation is when the score is maximized and close to 1, which indicates a perfect fit: in our case, the values of the R-squared were 0.44 for the Linear Regression, 0.50 for the Random Forest and 0.51 for XGBoost.
